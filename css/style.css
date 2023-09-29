@@ -1,0 +1,57 @@
+body {
+    background-image: linear-gradient(to bottom, #851919, #FFEECC);
+    background-repeat: no-repeat;
+}
+
+.header {
+    background-image: url(../media/site-styling/castle-floor.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 6rem;
+
+    color: silver;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 1rem;
+
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-evenly;
+    transform: translateX(25%) translateY(40%);
+    padding: .3rem;
+    border-radius: 6px;
+    width: 19.5rem ;    
+    background-color: #FFEECC;
+    background-repeat: no-repeat;
+}
+
+.heading {
+    text-align: center;
+}
+
+#homepage-image {
+    border: 2.2rem solid #260303;
+    border-radius: 10px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+.btn-primary {
+    background-color: #851919;
+    border-color: #FFEECC;
+    border-width: 3px;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: rgb(233, 32, 32);
+}
+
+a.active .btn-primary, div.dropdown-menu a.active, div.dropdown button.active {
+    background-color: rgb(233, 32, 32);
+    border-width: 3px;
+    border-color: rgb(175, 149, 30);
+}
