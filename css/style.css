@@ -1,6 +1,7 @@
 body {
   background-image: linear-gradient(to bottom, #851919, #FFEECC);
   background-repeat: no-repeat;
+  background-size:  120% 120%;
 }
 
 .header {
@@ -130,6 +131,7 @@ a.active .btn-primary, div.dropdown-menu a.active, div.dropdown button.active {
     position: absolute;
     top: 50%;
     transition: all 200ms ease-in-out;
+    font-size: 200%;
     border-radius: 25px; 
   }
   
@@ -139,10 +141,10 @@ a.active .btn-primary, div.dropdown-menu a.active, div.dropdown button.active {
   
   .button#prev, button#prev2 {
     left: -3rem;
-    padding: 1rem 2rem 1rem 1.5rem;
+    /* padding: 1rem 2rem 1rem 1.5rem; */
   }
   
   .button#next, button#next2 {
     right: -3rem;
-    padding: 1rem 1.5rem 1rem 2rem;
+    /* padding: 1rem 1.5rem 1rem 2rem; */
   }
