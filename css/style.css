@@ -1,29 +1,31 @@
 body {
-    background-image: linear-gradient(to bottom, #851919, #FFEECC);
-    background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom, #851919, #FFEECC);
+  background-repeat: no-repeat;
 }
 
 .header {
-    background-image: url(../media/site-styling/castle-floor.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 6rem;
-
-    color: silver;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 1rem;
+  background-image: url(../media/site-styling/castle-floor.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 6rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 1rem;
 
 }
 
 .nav-menu{
-    display: flex;
-    justify-content: space-evenly;
-    transform: translateX(25%) translateY(40%);
-    padding: .3rem;
-    border-radius: 6px;
-    width: 19.5rem ;    
-    background-color: #FFEECC;
-    background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-evenly;
+  transform: translateX(25%) translateY(40%);
+  padding: .3rem;
+  border-radius: 6px;
+  width: 19.5rem ;    
+  background-color: #FFEECC;
+  background-repeat: no-repeat;
+}
+
+.dropdown-menu {
+  position: relative;
 }
 
 .heading {
@@ -31,27 +33,116 @@ body {
 }
 
 #homepage-image {
-    border: 2.2rem solid #260303;
-    border-radius: 10px;
+  border: 2.2rem solid #260303;
+  border-radius: 10px;
 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 85%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
 }
 
 .btn-primary {
-    background-color: #851919;
-    border-color: #FFEECC;
-    border-width: 3px;
+  background-color: #851919;
+  border-color: rgb(124, 124, 124);
+  border-width: 3px;
 }
 
 .btn-primary:hover, .btn-primary:focus {
-    background-color: rgb(233, 32, 32);
+  background-color: rgb(233, 32, 32);
 }
 
 a.active .btn-primary, div.dropdown-menu a.active, div.dropdown button.active {
-    background-color: rgb(233, 32, 32);
-    border-width: 3px;
-    border-color: rgb(175, 149, 30);
+  background-color: rgb(233, 32, 32);
+  border-width: 3px;
+  border-color: rgb(175, 149, 30);
 }
+
+.images {
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.images img {
+  display: flex;
+  max-width: 30vw;
+  border: solid rgb(124, 124, 124);
+  border-radius: 10px;
+}
+
+/* image slider */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+  
+  .slider-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: calc(20vh - 4.25rem);
+    gap: 2rem;
+    padding: 5px;
+  }
+  
+  #desktop-img, #phone-img {
+    position: relative;
+    width: 80%;
+    height: 90vh;
+  }
+
+  #other-img {
+    position: relative;
+    width: 650px;
+    height: 650px;
+  }
+  
+  #desktop-img img, #other-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+  }
+
+  #phone-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    opacity: 1;
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+    
+  }
+  
+  #desktop-img img.active, #phone-img img.active, #other-img img.active {
+    opacity: 1;
+    border: solid rgb(124, 124, 124) 3px;
+  }
+  
+  .button, #prev #next{
+    position: absolute;
+    top: 50%;
+    transition: all 200ms ease-in-out;
+    border-radius: 25px; 
+  }
+  
+  .button:hover {
+    background-color: steelblue;
+  }
+  
+  .button#prev, button#prev2 {
+    left: -3rem;
+    padding: 1rem 2rem 1rem 1.5rem;
+  }
+  
+  .button#next, button#next2 {
+    right: -3rem;
+    padding: 1rem 1.5rem 1rem 2rem;
+  }
