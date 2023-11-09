@@ -1,7 +1,7 @@
 body {
   background-image: linear-gradient(to bottom, #851919, #FFEECC);
   background-repeat: no-repeat;
-  background-size:  120% 120%;
+  min-height: 100vh;
 }
 
 .header {
